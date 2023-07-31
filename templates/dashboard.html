@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 class="red-text">ỦY BAN NHÂN DÂN TỈNH ĐIỆN BIÊN KÍNH CHÀO QUÝ KHÁCH</h1>
+        <div class="top-section">
+            <div class="name-title">
+                <h2 class="red-text">Họ và tên:</h2>
+                <h1>{{ user["fullName"] }}</h1>
+                <h2 class="red-text">Chức vụ:</h2>
+                <h1>{{ user["title"] }}</h1>
+            </div>
+            <div class="meeting-schedule">
+                <h2 class="red-text">Lịch họp</h2>
+                <ul>
+                    {% for meeting in user["meetings"] %}
+                    <li>
+                        <span class="meeting-time">{{ meeting["time"] }}</span>
+                        <span class="meeting-title">{{ meeting["title"] }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="qr-code">
+                <h2 class="red-text">Tài liệu cuộc họp</h2>
+                <h3 >Quét mã QR để nhận tài liệu</h2>
+                <img src="{{ user["qrCode"] }}" alt="QR Code">
+            </div>
+        </div>
+        <div class="current-meeting">
+            <h2 class="red-text">Current Meeting</h2>
+            <div class="meeting-content">
+                <h3>{{ user["meetings"][0]["title"] }}</h3>
+                <p>{{ user["meetings"][0]["content"] }}</p>
+            </div>
+        </div>
+    </div>
+    <form action="/logout" method="post">
+        <input type="submit" value="Đăng xuất">
+    </form>
+</body>
+</html>

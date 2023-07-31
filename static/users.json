@@ -1,0 +1,46 @@
+[
+  {
+    "username": "Trung",
+    "password": "ktr123",
+    "fullName": "Trung Nguyen",
+    "title": "Phó phòng hành chính",
+    "qrCode": "/static/images/qr-code.png",
+    "meetings": [
+      
+      {
+        "date": "2023-07-28",
+        "time": "10:00 Chiều",
+        "title": "Tiến độ thực thi",
+        "content": "Ủy ban soạn thảo, trong bối cảnh của phòng cháy chữa cháy, đóng vai trò quan trọng trong việc xây dựng và hoàn thiện các quy tắc và quy định về an toàn cháy nổ, bao gồm cả công nghiệp và dân dụng. Các quy định này bao gồm các hướng dẫn về cách cải thiện công tác đào tạo, tư vấn và kiểm tra an toàn cháy nổ; cách kiểm soát và giảm thiểu nguy cơ phát sinh hỏa hoạn và sự cố cháy; cách xây dựng, bố trí và duy trì các hệ thống chữa cháy và cứu nạn; cũng như việc phối hợp giữa các cơ quan chức năng liên quan để đảm bảo sự phối hợp tốt nhất trong việc ứng phó với tình huống khẩn cấp."
+      },
+      {
+        "date": "2023-07-29",
+        "time": "2:00 Chiều",
+        "title": "Tiến độ thực thi",
+        "content": "Ủy ban soạn thảo, trong bối cảnh của phòng cháy chữa cháy, đóng vai trò quan trọng trong việc xây dựng và hoàn thiện các quy tắc và quy định về an toàn cháy nổ, bao gồm cả công nghiệp và dân dụng. Các quy định này bao gồm các hướng dẫn về cách cải thiện công tác đào tạo, tư vấn và kiểm tra an toàn cháy nổ; cách kiểm soát và giảm thiểu nguy cơ phát sinh hỏa hoạn và sự cố cháy; cách xây dựng, bố trí và duy trì các hệ thống chữa cháy và cứu nạn; cũng như việc phối hợp giữa các cơ quan chức năng liên quan để đảm bảo sự phối hợp tốt nhất trong việc ứng phó với tình huống khẩn cấp."
+      }
+    ]
+  },
+  {
+    "username": "Hung",
+    "password": "ktr123",
+    "fullName": "Hung Le",
+    "title": "Phó phòng hành chính",
+    "qrCode": "/static/images/qr-code.png",
+    "meetings": [
+    
+      {
+        "date": "2023-07-28",
+        "time": "10:00 Chiều",
+        "title": "Tiến độ thực thi",
+        "content": "Ủy ban soạn thảo, trong bối cảnh của phòng cháy chữa cháy, đóng vai trò quan trọng trong việc xây dựng và hoàn thiện các quy tắc và quy định về an toàn cháy nổ, bao gồm cả công nghiệp và dân dụng. Các quy định này bao gồm các hướng dẫn về cách cải thiện công tác đào tạo, tư vấn và kiểm tra an toàn cháy nổ; cách kiểm soát và giảm thiểu nguy cơ phát sinh hỏa hoạn và sự cố cháy; cách xây dựng, bố trí và duy trì các hệ thống chữa cháy và cứu nạn; cũng như việc phối hợp giữa các cơ quan chức năng liên quan để đảm bảo sự phối hợp tốt nhất trong việc ứng phó với tình huống khẩn cấp."
+      },
+      {
+        "date": "2023-07-29",
+        "time": "2:00 Sáng",
+        "title": "Tiến độ thực thi",
+        "content": "Ủy ban soạn thảo, trong bối cảnh của phòng cháy chữa cháy, đóng vai trò quan trọng trong việc xây dựng và hoàn thiện các quy tắc và quy định về an toàn cháy nổ, bao gồm cả công nghiệp và dân dụng. Các quy định này bao gồm các hướng dẫn về cách cải thiện công tác đào tạo, tư vấn và kiểm tra an toàn cháy nổ; cách kiểm soát và giảm thiểu nguy cơ phát sinh hỏa hoạn và sự cố cháy; cách xây dựng, bố trí và duy trì các hệ thống chữa cháy và cứu nạn; cũng như việc phối hợp giữa các cơ quan chức năng liên quan để đảm bảo sự phối hợp tốt nhất trong việc ứng phó với tình huống khẩn cấp."
+      }
+    ]
+  }
+]

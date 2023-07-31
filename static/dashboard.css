@@ -1,0 +1,150 @@
+/* dashboard.css */
+.red-text {
+    color: red;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../static/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dashboard-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a thin box border around the dashboard container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center; /* Center the title */
+    font-size: 24px; /* Adjust for 1024x600 display */
+    margin: 10px 0; /* Add margin for spacing */
+    border: 1px solid #ccc; /* Add a thin box border around the name and title section */
+    padding: 10px; /* Add some padding to create space between content and border */
+}
+
+h2 {
+    font-size: 20px; /* Adjust for 1024x600 display */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap to a new line if needed */
+    justify-content: space-between;
+    border: 1px solid #ccc; /* Add a thin box border around the top section */
+    padding: 10px; /* Add some padding to create space between content and border */
+}
+
+.name-title {
+    flex: 1 1 100%; /* Occupy the full width initially, but allow to shrink if necessary */
+    text-align: center; /* Center the name and title */
+    border: 1px solid #ccc; /* Add a thin box border around the name and title section */
+    padding: 10px; /* Add some padding to create space between content and border */
+}
+
+.qr-code {
+    flex: 0 0 30%;
+    text-align: center; /* Center the QR Code image */
+    border: 1px solid #ccc; /* Add a thin box border around the QR Code section */
+    padding: 10px; /* Add some padding to create space between content and border */
+}
+
+.qr-code img {
+    max-width: 100%;
+    height: auto;
+}
+
+.meeting-schedule {
+    flex: 0 0 65%;
+    border: 1px solid #ccc; /* Add a thin box border around the Meeting Schedule section */
+    padding: 10px; /* Add some padding to create space between content and border */
+}
+
+.meeting-schedule ul {
+    list-style: none;
+    padding: 0;
+}
+
+.meeting-schedule li {
+    font-size: 18px; /* Adjust for 1024x600 display */
+    margin-bottom: 10px;
+}
+
+.current-meeting {
+    flex: 1 1 100%; /* Occupy the full width initially, but allow to shrink if necessary */
+    border: 1px solid #ccc; /* Add a thin box border around the Current Meeting section */
+    padding: 10px; /* Add some padding to create space between content and border */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.current-meeting h3 {
+    font-size: 20px; /* Adjust for 1024x600 display */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.current-meeting p {
+    font-size: 16px; /* Adjust for 1024x600 display */
+    line-height: 1.6;
+}
+
+/* Adjustments for 1024x600 display */
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+    h1 {
+        font-size: 20px; /* Adjust for 1024x600 display */
+        padding: 5px; /* Adjust for 1024x600 display */
+    }
+
+    h2 {
+        font-size: 16px; /* Adjust for 1024x600 display */
+        padding: 5px; /* Adjust for 1024x600 display */
+    }
+
+    .dashboard-container {
+        padding: 10px; /* Adjust for 1024x600 display */
+    }
+
+    .top-section {
+        flex-direction: column; /* Adjust for 1024x600 display */
+    }
+
+    .name-title,
+    .qr-code,
+    .meeting-schedule,
+    .current-meeting {
+        width: 100%; /* Adjust for 1024x600 display */
+    }
+
+    .name-title,
+    .qr-code,
+    .meeting-schedule {
+        margin-bottom: 10px; /* Add margin between elements at 1024x600 display */
+    }
+
+    .qr-code {
+        flex: 0 0 100%; /* Occupy the full width at 1024x600 display */
+    }
+
+    .meeting-schedule {
+        flex: 0 0 100%; /* Occupy the full width at 1024x600 display */
+    }
+}
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #D71920;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+}
