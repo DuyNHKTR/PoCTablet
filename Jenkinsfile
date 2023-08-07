@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'Pi'
+    }
+
+  }
   stages {
     stage('Checkout Code') {
       steps {
@@ -8,8 +13,19 @@ pipeline {
     }
 
     stage('Add logs') {
-      steps {
-        sh 'ls -al'
+      parallel {
+        stage('Add logs') {
+          steps {
+            sh 'ls -al'
+          }
+        }
+
+        stage('Install requirements') {
+          steps {
+            sh 'pip3 install -r requirements.txt'
+          }
+        }
+
       }
     }
 
